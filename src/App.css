@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 70%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  overflow: hidden;
+  background: #282727;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #282727;
+  z-index: 100;
+}
+
+header img {
+  width: 150px;
+}
+
+header .navigation {
+  width: fit-content;
+  display: flex;
+  padding: 15px 10px;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+header .navigation li a {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 30px;
+
+  &:hover {
+    color: #579a01;
+  }
+}
+
+.home {
+  padding: 120px 30px 0 100px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .home-content {
+  width: 50%;
+  padding: 10px;
+}
+
+.home .home-content h1 {
+  font-size: 5rem;
+}
+
+.home .home-content p {
+  font-size: 1.8rem;
+}
+
+.home .home-content a button {
+  width: 250px;
+  height: 80px;
+  padding: 20px 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 30px 30%;
+  color: #ffffff;
+  background: #be0404;
+  border-radius: 20px;
+  border: none;
+  transition: height 0.5s ease;
+  cursor: pointer;
+  box-shadow: 3px 2px 5px #000000;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "DIVE INTO IT";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    opacity: 0;
+  }
+  &:hover {
+    height: 400px;
+    color: #da0b0b;
+    background: #da0b0b;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.home video {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.about {
+  color: #ffffff;
+  padding: 110px 30px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content {
+  margin-top: 30px;
+  width: 60%;
+  padding: 10px;
+}
+
+.about-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #c02c0f;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.about-content ul li strong {
+  /* color: #579a01; */
+  font-size: 1.8rem;
+}
+
+.about video {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+}
+
+.learn-more {
+  color: #ffffff;
+  padding: 100px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.learn-more .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.learn-more h1 {
+  font-size: 3rem;
+}
+
+.learn-more h2 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2;
+  color: #579a01;
+}
+
+.learn-more p {
+  font-size: 1.5rem;
+}
+
+.learn-more h3 {
+  font-size: 1.7rem;
+  color: #f6e7e7;
+}
+
+.learn-more ul li {
+  list-style: square;
+  margin-left: 20px;
+  font-size: 1.3rem;
+  color: #f6e7e7;
+}
+
+.learn-more .container .box {
+  min-width: 250px;
+  width: 30%;
+  padding: 15px;
+  margin: 5px;
+  border: solid 1px rgb(96, 93, 93);
+  box-shadow: 5px 2px 5px #000000;
+  border-radius: 15px;
+  transform: translateY(3rem);
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+video {
+  &:hover {
+    scale: 1.05;
+  }
+}
+footer {
+  background-color: #413f3f;
+  color: #ffffff;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+footer a {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 0 20px;
+
+  &:hover {
+    color: #579a01;
+  }
+}
+
+#menu {
+  font-size: 3rem;
+  color: #000000;
+  display: none;
+  transition: transform 0.3s ease-in-out;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 59%;
+  }
+
+  .home,
+  .about,
+  .learn-more {
+    padding: 120px 30px 0 30px;
+  }
+
+  .learn-more h1 {
+    text-align: center;
+  }
+
+  .home .home-content {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .learn-more .container .box {
+    width: 80%;
+  }
+
+  .about video {
+    width: 250px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 617px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  header .navigation {
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 100;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    display: none;
+    padding: 10px;
+  }
+
+  header .navigation.active {
+    display: flex;
+    transition: 0.5s ease-in-out;
+  }
+
+  .home video {
+    width: 400px;
+    height: 300px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about video {
+    width: 300px;
+    height: 200px;
+  }
+  .about h1 {
+    text-align: center;
+  }
+
+  .about .about-content {
+    order: 2;
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .home .home-content a button {
+    margin: 15px;
+  }
+}
