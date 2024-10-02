@@ -1,10 +1,10 @@
 function Learnmore (){
 
     return(
-    <section class="learn-more" id="learn-more">
+    <section className="learn-more" id="learn-more">
       <h1>Key Components of Web Development</h1>
-      <div class="container">
-        <div class="box">
+      <div className="container">
+        <div className="box">
           <h2>Front-End Development</h2>
           <p>
             <strong>Role:</strong> Front-end development focuses on creating the
@@ -29,7 +29,7 @@ function Learnmore (){
             </li>
           </ul>
         </div>
-        <div class="box">
+        <div className="box">
           <h2>Back-End Development</h2>
           <p>
             <strong>Role:</strong> Back-end development handles the server-side
@@ -55,7 +55,7 @@ function Learnmore (){
             </li>
           </ul>
         </div>
-        <div class="box">
+        <div className="box">
           <h2>Full-Stack Development</h2>
           <p>
             <strong>Role:</strong> Full-stack developers are proficient in both
