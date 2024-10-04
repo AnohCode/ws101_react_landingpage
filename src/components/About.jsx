@@ -37,8 +37,8 @@ function About(){
           </li>
         </ul>
       </div>
-      <video loop autoPlay={true} muted>
-        <source src="./ws101_react_landingpage/7989417-hd_1080_1920_25fps.mp4" type="video/mp4" />
+      <video controls loop autoPlay={true} muted>
+        <source src="./ws101_react_landingpage/aboutvideo.mp4" type="video/mp4" />
       </video>
     </section>
     )

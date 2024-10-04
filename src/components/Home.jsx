@@ -11,8 +11,8 @@ function Home(){
         </p>
         <a href="#about"><button>DIVE INTO IT</button></a>
       </div>
-      <video loop autoPlay={true} muted>
-        <source src="./ws101_react_landingpage/3141210-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+      <video controls loop autoPlay={true} muted>
+        <source src="./ws101_react_landingpage/homevideo.mp4" type="video/mp4" />
       </video>
     </section>)
 }
